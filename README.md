@@ -1,2 +1,3 @@
-# grandeur
+# Grandeur
+
 My personal portfolio website
