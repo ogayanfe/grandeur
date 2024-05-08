@@ -1,0 +1,962 @@
+@import url("https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap");
+
+/*
+! tailwindcss v3.4.3 | MIT License | https://tailwindcss.com
+*/
+
+/*
+1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
+2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)
+*/
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  /* 1 */
+  border-width: 0;
+  /* 2 */
+  border-style: solid;
+  /* 2 */
+  border-color: #e5e7eb;
+  /* 2 */
+}
+
+::before,
+::after {
+  --tw-content: '';
+}
+
+/*
+1. Use a consistent sensible line-height in all browsers.
+2. Prevent adjustments of font size after orientation changes in iOS.
+3. Use a more readable tab size.
+4. Use the user's configured `sans` font-family by default.
+5. Use the user's configured `sans` font-feature-settings by default.
+6. Use the user's configured `sans` font-variation-settings by default.
+7. Disable tap highlights on iOS
+*/
+
+html,
+:host {
+  line-height: 1.5;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  -moz-tab-size: 4;
+  /* 3 */
+  -o-tab-size: 4;
+     tab-size: 4;
+  /* 3 */
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  /* 4 */
+  font-feature-settings: normal;
+  /* 5 */
+  font-variation-settings: normal;
+  /* 6 */
+  -webkit-tap-highlight-color: transparent;
+  /* 7 */
+}
+
+/*
+1. Remove the margin in all browsers.
+2. Inherit line-height from `html` so users can set them as a class directly on the `html` element.
+*/
+
+body {
+  margin: 0;
+  /* 1 */
+  line-height: inherit;
+  /* 2 */
+}
+
+/*
+1. Add the correct height in Firefox.
+2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
+3. Ensure horizontal rules are visible by default.
+*/
+
+hr {
+  height: 0;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  border-top-width: 1px;
+  /* 3 */
+}
+
+/*
+Add the correct text decoration in Chrome, Edge, and Safari.
+*/
+
+abbr:where([title]) {
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+}
+
+/*
+Remove the default font size and weight for headings.
+*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*
+Reset links to optimize for opt-in styling instead of opt-out.
+*/
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+/*
+Add the correct font weight in Edge and Safari.
+*/
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/*
+1. Use the user's configured `mono` font-family by default.
+2. Use the user's configured `mono` font-feature-settings by default.
+3. Use the user's configured `mono` font-variation-settings by default.
+4. Correct the odd `em` font sizing in all browsers.
+*/
+
+code,
+kbd,
+samp,
+pre {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  /* 1 */
+  font-feature-settings: normal;
+  /* 2 */
+  font-variation-settings: normal;
+  /* 3 */
+  font-size: 1em;
+  /* 4 */
+}
+
+/*
+Add the correct font size in all browsers.
+*/
+
+small {
+  font-size: 80%;
+}
+
+/*
+Prevent `sub` and `sup` elements from affecting the line height in all browsers.
+*/
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/*
+1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)
+2. Correct table border color inheritance in all Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)
+3. Remove gaps between table borders by default.
+*/
+
+table {
+  text-indent: 0;
+  /* 1 */
+  border-color: inherit;
+  /* 2 */
+  border-collapse: collapse;
+  /* 3 */
+}
+
+/*
+1. Change the font styles in all browsers.
+2. Remove the margin in Firefox and Safari.
+3. Remove default padding in all browsers.
+*/
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-feature-settings: inherit;
+  /* 1 */
+  font-variation-settings: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  font-weight: inherit;
+  /* 1 */
+  line-height: inherit;
+  /* 1 */
+  letter-spacing: inherit;
+  /* 1 */
+  color: inherit;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+  padding: 0;
+  /* 3 */
+}
+
+/*
+Remove the inheritance of text transform in Edge and Firefox.
+*/
+
+button,
+select {
+  text-transform: none;
+}
+
+/*
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Remove default button styles.
+*/
+
+button,
+input:where([type='button']),
+input:where([type='reset']),
+input:where([type='submit']) {
+  -webkit-appearance: button;
+  /* 1 */
+  background-color: transparent;
+  /* 2 */
+  background-image: none;
+  /* 2 */
+}
+
+/*
+Use the modern Firefox focus style for all focusable elements.
+*/
+
+:-moz-focusring {
+  outline: auto;
+}
+
+/*
+Remove the additional `:invalid` styles in Firefox. (https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737)
+*/
+
+:-moz-ui-invalid {
+  box-shadow: none;
+}
+
+/*
+Add the correct vertical alignment in Chrome and Firefox.
+*/
+
+progress {
+  vertical-align: baseline;
+}
+
+/*
+Correct the cursor style of increment and decrement buttons in Safari.
+*/
+
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/*
+1. Correct the odd appearance in Chrome and Safari.
+2. Correct the outline style in Safari.
+*/
+
+[type='search'] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/*
+Remove the inner padding in Chrome and Safari on macOS.
+*/
+
+::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/*
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Change font properties to `inherit` in Safari.
+*/
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/*
+Add the correct display in Chrome and Safari.
+*/
+
+summary {
+  display: list-item;
+}
+
+/*
+Removes the default spacing and border for appropriate elements.
+*/
+
+blockquote,
+dl,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+figure,
+p,
+pre {
+  margin: 0;
+}
+
+fieldset {
+  margin: 0;
+  padding: 0;
+}
+
+legend {
+  padding: 0;
+}
+
+ol,
+ul,
+menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+Reset default styling for dialogs.
+*/
+
+dialog {
+  padding: 0;
+}
+
+/*
+Prevent resizing textareas horizontally by default.
+*/
+
+textarea {
+  resize: vertical;
+}
+
+/*
+1. Reset the default placeholder opacity in Firefox. (https://github.com/tailwindlabs/tailwindcss/issues/3300)
+2. Set the default placeholder color to the user's configured gray 400 color.
+*/
+
+input::-moz-placeholder, textarea::-moz-placeholder {
+  opacity: 1;
+  /* 1 */
+  color: #9ca3af;
+  /* 2 */
+}
+
+input::placeholder,
+textarea::placeholder {
+  opacity: 1;
+  /* 1 */
+  color: #9ca3af;
+  /* 2 */
+}
+
+/*
+Set the default cursor for buttons.
+*/
+
+button,
+[role="button"] {
+  cursor: pointer;
+}
+
+/*
+Make sure disabled buttons don't get the pointer cursor.
+*/
+
+:disabled {
+  cursor: default;
+}
+
+/*
+1. Make replaced elements `display: block` by default. (https://github.com/mozdevs/cssremedy/issues/14)
+2. Add `vertical-align: middle` to align replaced elements more sensibly by default. (https://github.com/jensimmons/cssremedy/issues/14#issuecomment-634934210)
+   This can trigger a poorly considered lint error in some tools but is included by design.
+*/
+
+img,
+svg,
+video,
+canvas,
+audio,
+iframe,
+embed,
+object {
+  display: block;
+  /* 1 */
+  vertical-align: middle;
+  /* 2 */
+}
+
+/*
+Constrain images and videos to the parent width and preserve their intrinsic aspect ratio. (https://github.com/mozdevs/cssremedy/issues/14)
+*/
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Make elements with the HTML hidden attribute stay hidden by default */
+
+[hidden] {
+  display: none;
+}
+
+*, ::before, ::after{
+  --tw-border-spacing-x: 0;
+  --tw-border-spacing-y: 0;
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  --tw-pan-x:  ;
+  --tw-pan-y:  ;
+  --tw-pinch-zoom:  ;
+  --tw-scroll-snap-strictness: proximity;
+  --tw-gradient-from-position:  ;
+  --tw-gradient-via-position:  ;
+  --tw-gradient-to-position:  ;
+  --tw-ordinal:  ;
+  --tw-slashed-zero:  ;
+  --tw-numeric-figure:  ;
+  --tw-numeric-spacing:  ;
+  --tw-numeric-fraction:  ;
+  --tw-ring-inset:  ;
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: rgb(59 130 246 / 0.5);
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  --tw-blur:  ;
+  --tw-brightness:  ;
+  --tw-contrast:  ;
+  --tw-grayscale:  ;
+  --tw-hue-rotate:  ;
+  --tw-invert:  ;
+  --tw-saturate:  ;
+  --tw-sepia:  ;
+  --tw-drop-shadow:  ;
+  --tw-backdrop-blur:  ;
+  --tw-backdrop-brightness:  ;
+  --tw-backdrop-contrast:  ;
+  --tw-backdrop-grayscale:  ;
+  --tw-backdrop-hue-rotate:  ;
+  --tw-backdrop-invert:  ;
+  --tw-backdrop-opacity:  ;
+  --tw-backdrop-saturate:  ;
+  --tw-backdrop-sepia:  ;
+  --tw-contain-size:  ;
+  --tw-contain-layout:  ;
+  --tw-contain-paint:  ;
+  --tw-contain-style:  ;
+}
+
+::backdrop{
+  --tw-border-spacing-x: 0;
+  --tw-border-spacing-y: 0;
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  --tw-pan-x:  ;
+  --tw-pan-y:  ;
+  --tw-pinch-zoom:  ;
+  --tw-scroll-snap-strictness: proximity;
+  --tw-gradient-from-position:  ;
+  --tw-gradient-via-position:  ;
+  --tw-gradient-to-position:  ;
+  --tw-ordinal:  ;
+  --tw-slashed-zero:  ;
+  --tw-numeric-figure:  ;
+  --tw-numeric-spacing:  ;
+  --tw-numeric-fraction:  ;
+  --tw-ring-inset:  ;
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: rgb(59 130 246 / 0.5);
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  --tw-blur:  ;
+  --tw-brightness:  ;
+  --tw-contrast:  ;
+  --tw-grayscale:  ;
+  --tw-hue-rotate:  ;
+  --tw-invert:  ;
+  --tw-saturate:  ;
+  --tw-sepia:  ;
+  --tw-drop-shadow:  ;
+  --tw-backdrop-blur:  ;
+  --tw-backdrop-brightness:  ;
+  --tw-backdrop-contrast:  ;
+  --tw-backdrop-grayscale:  ;
+  --tw-backdrop-hue-rotate:  ;
+  --tw-backdrop-invert:  ;
+  --tw-backdrop-opacity:  ;
+  --tw-backdrop-saturate:  ;
+  --tw-backdrop-sepia:  ;
+  --tw-contain-size:  ;
+  --tw-contain-layout:  ;
+  --tw-contain-paint:  ;
+  --tw-contain-style:  ;
+}
+
+.icon-\[fa--codepen\]{
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  background-color: currentColor;
+  -webkit-mask-image: var(--svg);
+  mask-image: var(--svg);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+  --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1792 1792' width='1792' height='1792'%3E%3Cpath fill='black' d='m216 1169l603 402v-359L485 989zm-62-144l193-129l-193-129zm819 546l603-402l-269-180l-334 223zm-77-493l272-182l-272-182l-272 182zM485 803l334-223V221L216 623zm960 93l193 129V767zm-138-93l269-180l-603-402v359zm485-180v546q0 41-34 64l-819 546q-21 13-43 13t-43-13L34 1233q-34-23-34-64V623q0-41 34-64L853 13q21-13 43-13t43 13l819 546q34 23 34 64'/%3E%3C/svg%3E");
+}
+
+.icon-\[mdi--github\]{
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  background-color: currentColor;
+  -webkit-mask-image: var(--svg);
+  mask-image: var(--svg);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+  --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24'%3E%3Cpath fill='black' d='M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5c.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34c-.46-1.16-1.11-1.47-1.11-1.47c-.91-.62.07-.6.07-.6c1 .07 1.53 1.03 1.53 1.03c.87 1.52 2.34 1.07 2.91.83c.09-.65.35-1.09.63-1.34c-2.22-.25-4.55-1.11-4.55-4.92c0-1.11.38-2 1.03-2.71c-.1-.25-.45-1.29.1-2.64c0 0 .84-.27 2.75 1.02c.79-.22 1.65-.33 2.5-.33s1.71.11 2.5.33c1.91-1.29 2.75-1.02 2.75-1.02c.55 1.35.2 2.39.1 2.64c.65.71 1.03 1.6 1.03 2.71c0 3.82-2.34 4.66-4.57 4.91c.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2'/%3E%3C/svg%3E");
+}
+
+.icon-\[mdi--linkedin\]{
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  background-color: currentColor;
+  -webkit-mask-image: var(--svg);
+  mask-image: var(--svg);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+  --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24'%3E%3Cpath fill='black' d='M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zm-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93zM6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37z'/%3E%3C/svg%3E");
+}
+
+.icon-\[pajamas--hamburger\]{
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  background-color: currentColor;
+  -webkit-mask-image: var(--svg);
+  mask-image: var(--svg);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+  --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' width='16' height='16'%3E%3Cpath fill='black' fill-rule='evenodd' d='M0 3.75A.75.75 0 0 1 .75 3h14.5a.75.75 0 0 1 0 1.5H.75A.75.75 0 0 1 0 3.75M0 8a.75.75 0 0 1 .75-.75h14.5a.75.75 0 0 1 0 1.5H.75A.75.75 0 0 1 0 8m.75 3.5a.75.75 0 0 0 0 1.5h14.5a.75.75 0 0 0 0-1.5z' clip-rule='evenodd'/%3E%3C/svg%3E");
+}
+
+.icon-\[simple-icons--codewars\]{
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  background-color: currentColor;
+  -webkit-mask-image: var(--svg);
+  mask-image: var(--svg);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+  --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24'%3E%3Cpath fill='black' d='M1.072.142A1.07 1.07 0 0 0 0 1.214v21.572a1.07 1.07 0 0 0 1.072 1.072h21.856A1.07 1.07 0 0 0 24 22.786V1.214A1.07 1.07 0 0 0 22.928.142zm9.736 1.818a.9.9 0 0 1 .828.539a.784.784 0 0 1 1.274.493a.64.64 0 0 1 .29-.06c.33.008.59.262.625.575a1.32 1.32 0 0 1 .624-.515a1.325 1.325 0 0 1 1.718.71a1.1 1.1 0 0 1 .306-.236a1.1 1.1 0 0 1 1.483.479a1.1 1.1 0 0 1 .12.47a.994.994 0 0 1 1.322 1.214a.904.904 0 0 1 .874 1.438a.784.784 0 0 1 .176 1.356a.64.64 0 0 1 .19.224a.64.64 0 0 1-.011.613a1.3 1.3 0 0 1 .482.235a1.334 1.334 0 0 1 .258 1.842a1.1 1.1 0 0 1 .35.15a1.1 1.1 0 0 1 .337 1.516a1.1 1.1 0 0 1-.344.344a.994.994 0 0 1 .228 1.318a1 1 0 0 1-.605.434a.904.904 0 0 1-.803 1.482l-.008-.04a.784.784 0 0 1-1.075.873a.64.64 0 0 1-.098.28a.63.63 0 0 1-.43.288a1.3 1.3 0 0 1 .023.456a1.334 1.334 0 0 1-1.44 1.173a1.1 1.1 0 0 1 .054.377a1.1 1.1 0 0 1-1.128 1.072a1.1 1.1 0 0 1-.47-.12a.994.994 0 0 1-1.696.583a.904.904 0 0 1-1.685.075a.784.784 0 0 1-1.274-.493a.64.64 0 0 1-.29.064a.64.64 0 0 1-.621-.58l.004-.007a1.33 1.33 0 0 1-.632.523a1.334 1.334 0 0 1-1.718-.706a1.1 1.1 0 0 1-.306.232a1.1 1.1 0 0 1-1.48-.478a1.1 1.1 0 0 1-.123-.471a.994.994 0 0 1-1.318-1.21a.904.904 0 0 1-.874-1.442a.784.784 0 0 1-.176-1.356a.64.64 0 0 1-.194-.224a.64.64 0 0 1 .011-.61l.019.004a1.3 1.3 0 0 1-.497-.239a1.334 1.334 0 0 1-.262-1.845a1.1 1.1 0 0 1-.35-.146a1.1 1.1 0 0 1-.337-1.52a1.1 1.1 0 0 1 .347-.34A.994.994 0 0 1 2.88 9a.904.904 0 0 1 .803-1.48a.784.784 0 0 1 1.083-.836a.64.64 0 0 1 .098-.28a.65.65 0 0 1 .433-.288a1.3 1.3 0 0 1-.026-.452A1.334 1.334 0 0 1 6.716 4.49a1.1 1.1 0 0 1-.06-.377a1.1 1.1 0 0 1 1.13-1.073a1.1 1.1 0 0 1 .47.115a.994.994 0 0 1 1.696-.579a.9.9 0 0 1 .857-.617zM3.683 7.519l.008.041l-.004-.04zM17.502 19.61l-.002-.004h-.037zM13.825 3.507l-.008.012l.008-.011zm-2.369-.014l-.003.003a.9.9 0 0 1-.665.27a.9.9 0 0 1-.583-.232a.994.994 0 0 1-.986.732a1 1 0 0 1-.362-.075a1.1 1.1 0 0 1-1.061 1.046a1.33 1.33 0 0 1 .123.736a1.33 1.33 0 0 1-.725 1.035a1.1 1.1 0 0 1 .307.795a1.1 1.1 0 0 1-.232.65c.321.18.53.523.523.915a1 1 0 0 1-.07.337a.915.915 0 0 1 .82.937a1 1 0 0 1-.01.138a.7.7 0 0 1 .157-.01c.343.007.627.25.702.57a.66.66 0 0 1 .38-.111c.31.007.561.224.632.511a.42.42 0 0 1 .381-.015a1.35 1.35 0 0 1 .303-.63a.4.4 0 0 1-.12-.143a.42.42 0 0 1 .004-.392a.665.665 0 0 1-.325-1.117a.74.74 0 0 1-.359-.336a.74.74 0 0 1 .385-1.023l-.06.026a.9.9 0 0 1-.201-.262a.915.915 0 0 1 .623-1.315V6.53a1.02 1.02 0 0 1 .437-1.371a1 1 0 0 1 .553-.112a1.11 1.11 0 0 1 .598-1.054l.06-.026a.6.6 0 0 1-.109-.21a.8.8 0 0 1-.455.132a.78.78 0 0 1-.662-.396m4.573 1.512a1.33 1.33 0 0 1-.587.46a1.33 1.33 0 0 1-1.255-.142v-.011a1.1 1.1 0 0 1-.553.66a1.1 1.1 0 0 1-.683.113a1.02 1.02 0 0 1-.553.889a1 1 0 0 1-.329.105a.92.92 0 0 1-.43 1.169a1 1 0 0 1-.127.056a.7.7 0 0 1 .086.13a.74.74 0 0 1-.168.89a.66.66 0 0 1 .28.283a.655.655 0 0 1-.149.796a.4.4 0 0 1 .153.164q.027.051.038.101a1.36 1.36 0 0 1 .672-.015a.4.4 0 0 1 .056-.142a.42.42 0 0 1 .34-.194a.665.665 0 0 1 .796-.848a.74.74 0 0 1 .112-.478a.733.733 0 0 1 1.016-.224a.9.9 0 0 1 .127-.306a.915.915 0 0 1 1.27-.28a1 1 0 0 1 .179.153a1.02 1.02 0 0 1 1.408-.314a1 1 0 0 1 .374.422c.355-.24.833-.261 1.214-.015a1 1 0 0 1 .209.172a.6.6 0 0 1 .082-.108a.8.8 0 0 1-.332-.337a.78.78 0 0 1 .03-.77a.9.9 0 0 1-.553-.455a.9.9 0 0 1-.075-.624a.994.994 0 0 1-1.117-.511a1 1 0 0 1-.104-.359a1.1 1.1 0 0 1-1.427-.43M5.249 7.37a.8.8 0 0 1-.124.46a.78.78 0 0 1-.68.362c.06.235.026.49-.112.71a.9.9 0 0 1-.5.377c.31.325.373.829.12 1.225a1 1 0 0 1-.255.269a1.1 1.1 0 0 1 .351 1.45a1.33 1.33 0 0 1 .691.276a1.33 1.33 0 0 1 .512 1.154c.28-.064.579-.019.84.15a1.1 1.1 0 0 1 .438.53a1.02 1.02 0 0 1 1.05.03a1 1 0 0 1 .257.231a.914.914 0 0 1 1.225-.224a1 1 0 0 1 .112.086a.7.7 0 0 1 .071-.142a.74.74 0 0 1 .852-.306a.66.66 0 0 1 .1-.381a.664.664 0 0 1 .763-.273a.42.42 0 0 1 .246-.373a1.36 1.36 0 0 1-.358-.523v-.008a.4.4 0 0 1-.25.075a.42.42 0 0 1-.344-.19a.665.665 0 0 1-1.132-.243a.74.74 0 0 1-.47.149a.733.733 0 0 1-.718-.755a.9.9 0 0 1-.329.049a.915.915 0 0 1-.855-1.177h-.004a1.016 1.016 0 0 1-.993-1.042a1 1 0 0 1 .168-.534a1.11 1.11 0 0 1-.64-1.035a1.1 1.1 0 0 1 .068-.358a1 1 0 0 1-.1-.019m11.127 2.133a.913.913 0 0 1-1.225.224a1 1 0 0 1-.112-.082a.7.7 0 0 1-.067.142a.74.74 0 0 1-.852.302a.66.66 0 0 1-.105.385a.66.66 0 0 1-.762.277a.4.4 0 0 1-.063.212a.4.4 0 0 1-.075.086a1.36 1.36 0 0 1 .314.564a.4.4 0 0 1 .187-.04a.42.42 0 0 1 .343.194a.665.665 0 0 1 1.136.242a.74.74 0 0 1 .467-.153c.41.008.728.348.72.755v.008v-.005a.9.9 0 0 1 .326-.052a.915.915 0 0 1 .896.941a1 1 0 0 1-.037.236c.564.015 1.008.482.993 1.046a1 1 0 0 1-.168.534a1.11 1.11 0 0 1 .647 1.035a1.1 1.1 0 0 1-.075.362l.004-.007l.1.018a.8.8 0 0 1 .124-.46a.78.78 0 0 1 .68-.362a.9.9 0 0 1 .112-.71a.9.9 0 0 1 .504-.373a.994.994 0 0 1-.123-1.225a1 1 0 0 1 .257-.269a1.1 1.1 0 0 1-.35-1.453a1.33 1.33 0 0 1-.696-.273h-.003a1.33 1.33 0 0 1-.512-1.158a1.08 1.08 0 0 1-.837-.145a1.1 1.1 0 0 1-.44-.535a1.02 1.02 0 0 1-1.05-.026a1 1 0 0 1-.258-.235m-.094 3.116l-.007.066zm-2.864-.259a1.36 1.36 0 0 1-.363.598a.42.42 0 0 1 .194.187a.42.42 0 0 1-.007.396a.665.665 0 0 1 .329 1.113a.74.74 0 0 1 .358.336a.74.74 0 0 1-.32.994a.9.9 0 0 1 .197.261a.91.91 0 0 1-.396 1.233a1 1 0 0 1-.224.082v.004a1.02 1.02 0 0 1-.44 1.374a1 1 0 0 1-.55.109a1.11 1.11 0 0 1-.661 1.083a.6.6 0 0 1 .112.21h-.004v.003a.8.8 0 0 1 .456-.134a.78.78 0 0 1 .661.392a.9.9 0 0 1 .665-.27a.9.9 0 0 1 .587.236a.994.994 0 0 1 .982-.736a1 1 0 0 1 .362.079v.022a1.1 1.1 0 0 1 1.061-1.072a1.33 1.33 0 0 1-.123-.736c.056-.46.34-.837.725-1.035l.003.004a1.1 1.1 0 0 1-.31-.795a1.1 1.1 0 0 1 .232-.654a1.02 1.02 0 0 1-.452-1.251a.915.915 0 0 1-.822-.934a1 1 0 0 1 .011-.142a.7.7 0 0 1-.157.015a.74.74 0 0 1-.698-.572a.66.66 0 0 1-.385.112a.67.67 0 0 1-.627-.512a.4.4 0 0 1-.217.053a.4.4 0 0 1-.18-.045zm-.964.93a1.4 1.4 0 0 1-.336.042q-.169 0-.322-.038a.42.42 0 0 1-.06.295a.42.42 0 0 1-.343.195a.665.665 0 0 1-.792.844a.74.74 0 0 1-.112.478a.74.74 0 0 1-1.02.224a.9.9 0 0 1-.127.306a.915.915 0 0 1-1.266.28a1 1 0 0 1-.183-.153v.004a1.02 1.02 0 0 1-1.408.31a1 1 0 0 1-.374-.418c-.355.239-.83.261-1.214.015a1 1 0 0 1-.21-.172a1 1 0 0 1-.081.105a.8.8 0 0 1 .336.336a.78.78 0 0 1-.034.77a.9.9 0 0 1 .553.455a.9.9 0 0 1 .075.624a.994.994 0 0 1 1.12.515a1 1 0 0 1 .101.355a1.1 1.1 0 0 1 1.431.43a1.33 1.33 0 0 1 .587-.46c.43-.172.896-.104 1.255.142a1.1 1.1 0 0 1 .549-.65a1.1 1.1 0 0 1 .683-.108a1.02 1.02 0 0 1 .553-.893a1 1 0 0 1 .333-.104a.916.916 0 0 1 .425-1.17a1 1 0 0 1 .131-.052a.7.7 0 0 1-.09-.134a.74.74 0 0 1 .169-.886a.66.66 0 0 1-.28-.284a.67.67 0 0 1 .149-.799a.4.4 0 0 1-.15-.164a.4.4 0 0 1-.048-.24'/%3E%3C/svg%3E");
+}
+
+.fixed{
+  position: fixed;
+}
+
+.-left-\[20000000000000000000px\]{
+  left: -20000000000000000000px;
+}
+
+.left-0{
+  left: 0px;
+}
+
+.top-0{
+  top: 0px;
+}
+
+.inline-block{
+  display: inline-block;
+}
+
+.flex{
+  display: flex;
+}
+
+.hidden{
+  display: none;
+}
+
+.h-11{
+  height: 2.75rem;
+}
+
+.h-full{
+  height: 100%;
+}
+
+.w-11{
+  width: 2.75rem;
+}
+
+.w-full{
+  width: 100%;
+}
+
+.max-w-4xl{
+  max-width: 56rem;
+}
+
+.flex-col{
+  flex-direction: column;
+}
+
+.items-center{
+  align-items: center;
+}
+
+.justify-center{
+  justify-content: center;
+}
+
+.justify-between{
+  justify-content: space-between;
+}
+
+.gap-12{
+  gap: 3rem;
+}
+
+.gap-2{
+  gap: 0.5rem;
+}
+
+.gap-6{
+  gap: 1.5rem;
+}
+
+.gap-3{
+  gap: 0.75rem;
+}
+
+.rounded-full{
+  border-radius: 9999px;
+}
+
+.rounded-md{
+  border-radius: 0.375rem;
+}
+
+.bg-blue-100{
+  --tw-bg-opacity: 1;
+  background-color: rgb(219 234 254 / var(--tw-bg-opacity));
+}
+
+.bg-blue-500{
+  --tw-bg-opacity: 1;
+  background-color: rgb(59 130 246 / var(--tw-bg-opacity));
+}
+
+.bg-gray-100{
+  --tw-bg-opacity: 1;
+  background-color: rgb(243 244 246 / var(--tw-bg-opacity));
+}
+
+.bg-gray-50{
+  --tw-bg-opacity: 1;
+  background-color: rgb(249 250 251 / var(--tw-bg-opacity));
+}
+
+.bg-white{
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-cover{
+  background-size: cover;
+}
+
+.p-1{
+  padding: 0.25rem;
+}
+
+.p-2{
+  padding: 0.5rem;
+}
+
+.p-4{
+  padding: 1rem;
+}
+
+.px-1{
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+}
+
+.px-10{
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
+.px-20{
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+.py-4{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.px-8{
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.px-3{
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+.pb-1{
+  padding-bottom: 0.25rem;
+}
+
+.pt-16{
+  padding-top: 4rem;
+}
+
+.text-center{
+  text-align: center;
+}
+
+.font-hero{
+  font-family: "Poetsen One" ;
+}
+
+.text-2xl{
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.text-3xl{
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.text-4xl{
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+.text-lg{
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.text-xl{
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.font-bold{
+  font-weight: 700;
+}
+
+.uppercase{
+  text-transform: uppercase;
+}
+
+.capitalize{
+  text-transform: capitalize;
+}
+
+.leading-relaxed{
+  line-height: 1.625;
+}
+
+.tracking-wide{
+  letter-spacing: 0.025em;
+}
+
+.text-gray-700{
+  --tw-text-opacity: 1;
+  color: rgb(55 65 81 / var(--tw-text-opacity));
+}
+
+.text-gray-900{
+  --tw-text-opacity: 1;
+  color: rgb(17 24 39 / var(--tw-text-opacity));
+}
+
+.text-white{
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.shadow-xl{
+  --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.ring-2{
+  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
+}
+
+.ring-white{
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgb(255 255 255 / var(--tw-ring-opacity));
+}
+
+.transition-colors{
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.duration-300{
+  transition-duration: 300ms;
+}
+
+.hover\:bg-blue-100:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(219 234 254 / var(--tw-bg-opacity));
+}
+
+@media (min-width: 640px){
+  .sm\:px-6{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .sm\:text-5xl{
+    font-size: 3rem;
+    line-height: 1;
+  }
+}
+
+@media (min-width: 768px){
+  .md\:absolute{
+    position: absolute;
+  }
+
+  .md\:top-1\/2{
+    top: 50%;
+  }
+
+  .md\:flex{
+    display: flex;
+  }
+
+  .md\:hidden{
+    display: none;
+  }
+
+  .md\:-translate-y-1\/2{
+    --tw-translate-y: -50%;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
+  .md\:flex-col{
+    flex-direction: column;
+  }
+
+  .md\:gap-12{
+    gap: 3rem;
+  }
+
+  .md\:bg-white{
+    --tw-bg-opacity: 1;
+    background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  }
+
+  .md\:p-5{
+    padding: 1.25rem;
+  }
+
+  .md\:px-12{
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  .md\:px-10{
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+}
+
+@media (min-width: 1024px){
+  .lg\:font-semibold{
+    font-weight: 600;
+  }
+}
