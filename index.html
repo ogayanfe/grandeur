@@ -7,7 +7,7 @@
   </head>
   <body class="bg-gray-50">
     <header
-      class="fixed left-0 top-0 flex w-full items-center justify-between bg-white p-4 font-bold uppercase text-gray-700 sm:px-6 md:p-5 md:px-12"
+      class="fixed left-0 top-0 z-10 flex w-full items-center justify-between bg-white p-4 font-bold uppercase text-gray-700 sm:px-6 md:p-5 md:px-12"
     >
       <div class="flex items-center justify-center gap-6">
         <img
@@ -30,13 +30,13 @@
       </ul>
     </header>
     <section
-      class="flex h-full w-full items-center justify-center bg-gray-100 bg-cover pt-16"
+      class="relative flex h-full min-h-[820px] w-full items-center justify-center bg-gray-100 bg-cover"
     >
       <div
-        class="flex h-full max-w-4xl flex-col items-center justify-center gap-6 text-gray-900 md:gap-12"
+        class="flex h-full max-w-4xl flex-col items-center justify-center gap-6 text-gray-900 md:gap-[3.2rem]"
       >
         <h1
-          class="font-hero w-full px-3 text-center text-4xl font-bold uppercase leading-relaxed tracking-wide sm:text-5xl md:px-10"
+          class="w-full px-3 text-center font-hero text-4xl font-bold uppercase leading-relaxed tracking-wide sm:text-5xl md:px-10"
         >
           Hi, I'm Odule Ayanfeoluwa
         </h1>
@@ -49,37 +49,53 @@
             Building beautiful & interactive web applications
           </p>
         </div>
-        <nav
-          class="left-0 flex gap-3 rounded-md p-2 text-3xl md:absolute md:top-1/2 md:-translate-y-1/2 md:flex-col md:bg-white"
-        >
-          <button
-            class="rounded-md p-2 transition-colors duration-300 hover:bg-blue-100"
-          >
-            <span class="icon-[mdi--github]"></span>
-          </button>
-          <button
-            class="rounded-md p-2 transition-colors duration-300 hover:bg-blue-100"
-          >
-            <span class="icon-[mdi--linkedin]"></span>
-          </button>
-          <button
-            class="rounded-md p-2 transition-colors duration-300 hover:bg-blue-100"
-          >
-            <span class="icon-[simple-icons--codewars] rounded-md"></span>
-          </button>
-          <button
-            class="rounded-md p-2 transition-colors duration-300 hover:bg-blue-100"
-          >
-            <span class="icon-[fa--codepen]"></span>
-          </button>
-        </nav>
 
         <button
           class="rounded-md bg-blue-500 px-20 py-4 text-lg font-bold text-white shadow-xl"
         >
           PROJECTS
         </button>
+        <div class="container absolute bottom-1 scale-50">
+          <div class="field">
+            <div class="mouse"></div>
+          </div>
+        </div>
+        <nav
+          class="left-0 flex gap-3 rounded-md p-2 text-3xl shadow-xl md:fixed md:top-1/2 md:-translate-y-[40%] md:flex-col md:bg-white"
+        >
+          <a
+            href="https://github.com/ogayanfe"
+            target="_blank"
+            class="rounded-md p-2 transition-colors duration-300 hover:bg-blue-100"
+          >
+            <span class="icon-[mdi--github]">Github profile</span>
+          </a>
+          <a
+            href="https://linkedin.com/in/ogayanfe"
+            target="_blank"
+            class="rounded-md p-2 transition-colors duration-300 hover:bg-blue-100"
+          >
+            <span class="icon-[mdi--linkedin]">Linkedin profile</span>
+          </a>
+          <a
+            href="https://www.codewars.com/users/ogayanfe"
+            target="_blank"
+            class="rounded-md p-2 transition-colors duration-300 hover:bg-blue-100"
+          >
+            <span class="icon-[simple-icons--codewars] rounded-md"
+              >Codewars profile</span
+            >
+          </a>
+          <a
+            href="https://codepen.io/o-a-grandeur"
+            target="_blank"
+            class="rounded-md p-2 transition-colors duration-300 hover:bg-blue-100"
+          >
+            <span class="icon-[fa--codepen]">Codepen profile</span>
+          </a>
+        </nav>
       </div>
     </section>
+    <section class="h-full w-full bg-gray-50"></section>
   </body>
 </html>
