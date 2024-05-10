@@ -6,7 +6,7 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        hero: 'url("/hero.jpg")',
+        hero: "linear-gradient(to right, rgba(240,240,240,0.8), rgba(255,255,255,0.8)),url(common-bg.svg)",
       },
       fontFamily: {
         hero: '"Poetsen One" ',

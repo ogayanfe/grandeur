@@ -3,6 +3,10 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  font-family: "Roboto", sans-serif;
+}
+
 .container {
   display: flex;
   align-items: center;

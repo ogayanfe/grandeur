@@ -1,101 +1,148 @@
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./index.css" />
-    <title>O.G Ayanfeoluwa</title>
-  </head>
-  <body class="bg-gray-50">
-    <header
-      class="fixed left-0 top-0 z-10 flex w-full items-center justify-between bg-white p-4 font-bold uppercase text-gray-700 sm:px-6 md:p-5 md:px-12"
-    >
-      <div class="flex items-center justify-center gap-6">
-        <img
-          class="inline-block h-11 w-11 rounded-full ring-2 ring-white"
-          src="/avatar.jpg"
-          alt=""
-        />
-        <h1>Odule Ayanfeoluwa</h1>
-      </div>
-      <span class="bg-blue-100"></span>
-      <button class="text-2xl md:hidden">
-        <span class="fixed -left-[20000000000000000000px]">Show Menu</span>
-        <span class="icon-[pajamas--hamburger]"></span>
-      </button>
-      <ul class="hidden items-center justify-center gap-12 md:flex">
-        <li>Home</li>
-        <li>About</li>
-        <li>Project</li>
-        <li>Contact</li>
-      </ul>
-    </header>
-    <section
-      class="relative flex h-full min-h-[820px] w-full items-center justify-center bg-gray-100 bg-cover"
-    >
-      <div
-        class="flex h-full max-w-4xl flex-col items-center justify-center gap-6 text-gray-900 md:gap-[3.2rem]"
-      >
-        <h1
-          class="w-full px-3 text-center font-hero text-4xl font-bold uppercase leading-relaxed tracking-wide sm:text-5xl md:px-10"
-        >
-          Hi, I'm Odule Ayanfeoluwa
-        </h1>
-        <div class="px-10 text-xl capitalize lg:font-semibold">
-          <p class="pb-1 text-center">
-            A full-stack web developer passionate about building web
-            applications.
-          </p>
-          <p class="text-center">
-            Building beautiful & interactive web applications
-          </p>
-        </div>
 
-        <button
-          class="rounded-md bg-blue-500 px-20 py-4 text-lg font-bold text-white shadow-xl"
-        >
-          PROJECTS
-        </button>
-        <div class="container absolute bottom-1 scale-50">
-          <div class="field">
-            <div class="mouse"></div>
-          </div>
-        </div>
-        <nav
-          class="left-0 flex gap-3 rounded-md p-2 text-3xl shadow-xl md:fixed md:top-1/2 md:-translate-y-[40%] md:flex-col md:bg-white"
-        >
-          <a
-            href="https://github.com/ogayanfe"
-            target="_blank"
-            class="rounded-md p-2 transition-colors duration-300 hover:bg-blue-100"
-          >
-            <span class="icon-[mdi--github]">Github profile</span>
-          </a>
-          <a
-            href="https://linkedin.com/in/ogayanfe"
-            target="_blank"
-            class="rounded-md p-2 transition-colors duration-300 hover:bg-blue-100"
-          >
-            <span class="icon-[mdi--linkedin]">Linkedin profile</span>
-          </a>
-          <a
-            href="https://www.codewars.com/users/ogayanfe"
-            target="_blank"
-            class="rounded-md p-2 transition-colors duration-300 hover:bg-blue-100"
-          >
-            <span class="icon-[simple-icons--codewars] rounded-md"
-              >Codewars profile</span
-            >
-          </a>
-          <a
-            href="https://codepen.io/o-a-grandeur"
-            target="_blank"
-            class="rounded-md p-2 transition-colors duration-300 hover:bg-blue-100"
-          >
-            <span class="icon-[fa--codepen]">Codepen profile</span>
-          </a>
-        </nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./index.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet" />
+  <title>O.G Ayanfeoluwa</title>
+</head>
+
+<body class="bg-gray-50 text-gray-700">
+  <header
+    class="fixed left-0 top-0 z-10 flex w-full items-center justify-between bg-white p-4 font-bold uppercase text-gray-700 sm:px-6 md:p-5 md:px-12">
+    <div class="flex items-center justify-center gap-6">
+      <img class="inline-block h-11 w-11 rounded-full ring-2 ring-white" src="/avatar.jpg" alt="" />
+      <h1>Odule Ayanfeoluwa</h1>
+    </div>
+    <span class="bg-blue-100"></span>
+    <button class="text-2xl md:hidden">
+      <span class="fixed -left-[20000000000000000000px]">Show Menu</span>
+      <span class="icon-[pajamas--hamburger]"></span>
+    </button>
+    <ul class="hidden items-center justify-center gap-12 md:flex">
+      <li>Home</li>
+      <li>About</li>
+      <li>Project</li>
+      <li>Contact</li>
+    </ul>
+  </header>
+  <section class="relative flex h-[110%] min-h-[700px] w-full items-center justify-center bg-hero bg-cover">
+    <div class="flex h-full max-w-3xl flex-col items-center justify-center gap-8 text-gray-900 xl:gap-[3.2rem]">
+      <h1
+        class="w-full px-3 text-center font-hero text-4xl font-black uppercase leading-relaxed tracking-wide sm:text-5xl md:px-10">
+        Hi, I'm Odule Ayanfeoluwa
+      </h1>
+      <div class="text-md px-10 font-medium capitalize md:text-lg">
+        <p class="pb-1 text-center">
+          A full-stack web developer passionate about building beautiful & interactive web applications that fits your
+          needs
+        </p>
       </div>
-    </section>
-    <section class="h-full w-full bg-gray-50"></section>
-  </body>
+      <nav
+        class="left-0 flex gap-3 rounded-md p-2 text-3xl xl:fixed xl:top-1/2 xl:-translate-y-[40%] xl:flex-col xl:bg-white xl:shadow-xl">
+        <a href="https://github.com/ogayanfe" target="_blank"
+          class="rounded-md p-2 transition-colors duration-300 hover:bg-blue-100">
+          <span class="icon-[mdi--github]">Github profile</span>
+        </a>
+        <a href="https://linkedin.com/in/ogayanfe" target="_blank"
+          class="rounded-md p-2 transition-colors duration-300 hover:bg-blue-100">
+          <span class="icon-[mdi--linkedin]">Linkedin profile</span>
+        </a>
+        <a href="https://www.codewars.com/users/ogayanfe" target="_blank"
+          class="rounded-md p-2 transition-colors duration-300 hover:bg-blue-100">
+          <span class="icon-[simple-icons--codewars] rounded-md">Codewars profile</span>
+        </a>
+        <a href="https://codepen.io/o-a-grandeur" target="_blank"
+          class="rounded-md p-2 transition-colors duration-300 hover:bg-blue-100">
+          <span class="icon-[fa--codepen]">Codepen profile</span>
+        </a>
+      </nav>
+      <button class="rounded-md bg-blue-500 px-20 py-4 text-lg font-bold text-white shadow-xl">
+        PROJECTS
+      </button>
+      <div class="container absolute bottom-1 scale-50">
+        <div class="field">
+          <div class="mouse"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="flex h-max min-h-[900px] w-full flex-col items-center justify-center gap-24 bg-gray-100 px-12 py-12">
+    <div class="flex flex-col items-center justify-center gap-4">
+      <h2 class="text-4xl font-semibold after:z-20 after:h-16">About me</h2>
+      <span class="h-1 w-8 rounded-lg bg-blue-500"></span>
+      <p class="text-md max-w-3xl text-center md:text-lg">
+        This section showcases my technical skills and current projects,
+        giving you a glimpse into my approach to crafting exceptional web
+        experiences.
+      </p>
+    </div>
+    <div class="flex flex-col w-full max-w-7xl grid-cols-2 gap-12 lg:gap-6 lg:grid">
+      <section class="flex flex-grow flex-col gap-10 leading-relaxed tracking-wide max-md:text-sm max-w-2xl">
+        <h3 class="text-3xl font-bold text-gray-700">Who Am I?</h3>
+        <p>
+          I'm a full-stack web developer with a passion for crafting
+          exceptional web experiences. My comprehensive skillset spans both
+          front-end and back-end development, allowing me to bridge the gap
+          between design and functionality.
+        </p>
+        <p>
+          I'm a firm believer in the power of knowledge sharing and
+          collaboration within the developer community. Explore my projects
+          section to see my work, and connect with me on
+          <a href="https://linkedin/in/ogayanfe" target="_blank">Linkedin</a>
+          and
+          <a href="https://github.com/ogayanfe" target="_blank">Instagram</a>
+          to stay in touch.
+        </p>
+        <p>
+          I'm always eager to collaborate on exciting projects and contribute
+          my skills to help businesses and individuals achieve their goals. If
+          you have a project that aligns with my expertise, feel free to
+          contact me!
+        </p>
+        <button class="rounded-md bg-blue-500 px-16 py-3 text-lg font-bold text-white shadow-xl w-max mt-8">
+          Contact
+        </button>
+      </section>
+      <section class="flex flex-col gap-6">
+        <h3 class="pb-5 text-3xl font-bold text-gray-700">My Skillset</h3>
+        <div class="flex flex-wrap gap-3">
+          <span class="bg-gray-200 text-gray-500 uppercase text-sm p-3 rounded-md">python</span>
+          <span class="bg-gray-200 text-gray-500 uppercase text-sm p-3 rounded-md">javascript</span>
+          <span class="bg-gray-200 text-gray-500 uppercase text-sm p-3 rounded-md">typescript</span>
+          <span class="bg-gray-200 text-gray-500 uppercase text-sm p-3 rounded-md">django</span>
+          <span class="bg-gray-200 text-gray-500 uppercase text-sm p-3 rounded-md">React</span>
+          <span class="bg-gray-200 text-gray-500 uppercase text-sm p-3 rounded-md">react router</span>
+          <span class="bg-gray-200 text-gray-500 uppercase text-sm p-3 rounded-md">html 5</span>
+          <span class="bg-gray-200 text-gray-500 uppercase text-sm p-3 rounded-md">CSS</span>
+          <span class="bg-gray-200 text-gray-500 uppercase text-sm p-3 rounded-md">django rest framework</span>
+          <span class="bg-gray-200 text-gray-500 uppercase text-sm p-3 rounded-md">git</span>
+          <span class="bg-gray-200 text-gray-500 uppercase text-sm p-3 rounded-md">mui</span>
+          <span class="bg-gray-200 text-gray-500 uppercase text-sm p-3 rounded-md">tailwind css</span>
+          <span class="bg-gray-200 text-gray-500 uppercase text-sm p-3 rounded-md">node js</span>
+          <span class="bg-gray-200 text-gray-500 uppercase text-sm p-3 rounded-md">bash</span>
+          <span class="bg-gray-200 text-gray-500 uppercase text-sm p-3 rounded-md">github</span>
+        </div>
+      </section>
+    </div>
+  </section>
+  <section class="w-full h-full bg-gray-50 py-12">
+    <div class="flex flex-col items-center justify-center gap-4">
+      <h2 class="text-4xl font-semibold after:z-20 after:h-16">About me</h2>
+      <span class="h-1 w-8 rounded-lg bg-blue-500"></span>
+      <p class="text-md max-w-3xl text-center md:text-lg">
+        This section showcases my technical skills and current projects,
+        giving you a glimpse into my approach to crafting exceptional web
+        experiences.
+      </p>
+    </div>
+  </section>
+</body>
+
 </html>
