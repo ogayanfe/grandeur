@@ -6,6 +6,7 @@
   <link rel="stylesheet" href="./index.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <script type="module" src="./src/js/index.js"></script>
   <link
     href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
     rel="stylesheet" />
@@ -32,9 +33,9 @@
     </ul>
   </header>
   <section class="relative flex h-[110%] min-h-[700px] w-full items-center justify-center bg-hero bg-cover">
-    <div class="flex h-full max-w-3xl flex-col items-center justify-center gap-8 text-gray-900 xl:gap-[3.2rem]">
+    <div class="flex h-full max-w-3xl flex-col items-center justify-center px-2 gap-8 text-gray-900 xl:gap-[3.2rem]">
       <h1
-        class="w-full px-3 text-center font-hero text-4xl font-black uppercase leading-relaxed tracking-wide sm:text-5xl md:px-10">
+        class="w-full text-center font-hero text-4xl font-black uppercase leading-relaxed tracking-wide sm:text-5xl md:px-10">
         Hi, I'm Odule Ayanfeoluwa
       </h1>
       <div class="text-md px-10 font-medium capitalize md:text-lg">
@@ -44,7 +45,7 @@
         </p>
       </div>
       <nav
-        class="left-0 flex gap-3 rounded-md p-2 text-3xl xl:fixed xl:top-1/2 xl:-translate-y-[40%] xl:flex-col xl:bg-white xl:shadow-xl">
+        class="left-0 flex gap-3 rounded-md p-2 text-3xl md:absolute md:top-1/2 md:-translate-y-[40%] md:flex-col md:bg-white md:shadow-md">
         <a href="https://github.com/ogayanfe" target="_blank"
           class="rounded-md p-2 transition-colors duration-300 hover:bg-blue-100">
           <span class="icon-[mdi--github]">Github profile</span>
@@ -77,7 +78,7 @@
       <h2 class="text-4xl font-semibold after:z-20 after:h-16">About me</h2>
       <span class="h-1 w-8 rounded-lg bg-blue-500"></span>
       <p class="text-md max-w-3xl text-center md:text-lg">
-        This section showcases my technical skills and current projects,
+        This section showcases my technical skills and abilities,
         giving you a glimpse into my approach to crafting exceptional web
         experiences.
       </p>
@@ -132,15 +133,33 @@
       </section>
     </div>
   </section>
-  <section class="w-full h-full bg-gray-50 py-12">
+  <section class="w-full h-full bg-gray-50 py-20">
     <div class="flex flex-col items-center justify-center gap-4">
-      <h2 class="text-4xl font-semibold after:z-20 after:h-16">About me</h2>
+      <h2 class="text-4xl font-semibold after:z-20 after:h-16">My Work</h2>
       <span class="h-1 w-8 rounded-lg bg-blue-500"></span>
       <p class="text-md max-w-3xl text-center md:text-lg">
-        This section showcases my technical skills and current projects,
-        giving you a glimpse into my approach to crafting exceptional web
-        experiences.
+        Here are some of the projects I have created over the years, github links to demo are live demos are provided if
+        available.
       </p>
+    </div>
+    <div class="flex flex-col gap-20 py-32 items-center justify-center">
+      <div class="w-full h-min grid grid-cols-2 max-w-6xl gap-10">
+        <!-- <div class="embla">
+          <div class="embla__container">
+            <div class="embla__slide">Slide 1</div>
+            <div class="embla__slide">Slide 2</div>
+            <div class="embla__slide">Slide 3</div>
+          </div>
+        </div> -->
+        <img class="h-80 w-full shadow-xl bg-black rounded-xl embla__slide object-fill"
+          src="src/assets/websandbox.png"></img>
+        <div class="w-full h-80"></div>
+      </div>
+      <div class="w-full h-min grid grid-cols-2 max-w-6xl gap-10">
+        <img class="h-80 w-full shadow-xl bg-black rounded-xl embla__slide object-fill"
+          src="src/assets/websandbox.png"></img>
+        <div class="w-full h-80"></div>
+      </div>
     </div>
   </section>
 </body>
