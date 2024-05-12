@@ -6,10 +6,11 @@
   <link rel="stylesheet" href="./index.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <script type="module" src="./src/js/index.js"></script>
+  <script type="module" src="./src/js/corousel.js"></script>
   <link
     href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
     rel="stylesheet" />
+  <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css">
   <title>O.G Ayanfeoluwa</title>
 </head>
 
@@ -94,11 +95,11 @@
         </p>
         <p>
           I'm a firm believer in the power of knowledge sharing and
-          collaboration within the developer community. Explore my projects
+          collaboration within the developer community. Explore the projects
           section to see my work, and connect with me on
-          <a href="https://linkedin/in/ogayanfe" target="_blank">Linkedin</a>
+          <a href="https://linkedin/in/ogayanfe" target="_blank" class="font-semibold">Linkedin</a>
           and
-          <a href="https://github.com/ogayanfe" target="_blank">Instagram</a>
+          <a href="https://github.com/ogayanfe" target="_blank" class="font-semibold">Github</a>
           to stay in touch.
         </p>
         <p>
@@ -114,26 +115,26 @@
       <section class="flex flex-col gap-6">
         <h3 class="pb-5 text-3xl font-bold text-gray-700">My Skillset</h3>
         <div class="flex flex-wrap gap-3">
-          <span class="bg-gray-200 text-gray-500 uppercase text-sm p-3 rounded-md">python</span>
-          <span class="bg-gray-200 text-gray-500 uppercase text-sm p-3 rounded-md">javascript</span>
-          <span class="bg-gray-200 text-gray-500 uppercase text-sm p-3 rounded-md">typescript</span>
-          <span class="bg-gray-200 text-gray-500 uppercase text-sm p-3 rounded-md">django</span>
-          <span class="bg-gray-200 text-gray-500 uppercase text-sm p-3 rounded-md">React</span>
-          <span class="bg-gray-200 text-gray-500 uppercase text-sm p-3 rounded-md">react router</span>
-          <span class="bg-gray-200 text-gray-500 uppercase text-sm p-3 rounded-md">html 5</span>
-          <span class="bg-gray-200 text-gray-500 uppercase text-sm p-3 rounded-md">CSS</span>
-          <span class="bg-gray-200 text-gray-500 uppercase text-sm p-3 rounded-md">django rest framework</span>
-          <span class="bg-gray-200 text-gray-500 uppercase text-sm p-3 rounded-md">git</span>
-          <span class="bg-gray-200 text-gray-500 uppercase text-sm p-3 rounded-md">mui</span>
-          <span class="bg-gray-200 text-gray-500 uppercase text-sm p-3 rounded-md">tailwind css</span>
-          <span class="bg-gray-200 text-gray-500 uppercase text-sm p-3 rounded-md">node js</span>
-          <span class="bg-gray-200 text-gray-500 uppercase text-sm p-3 rounded-md">bash</span>
-          <span class="bg-gray-200 text-gray-500 uppercase text-sm p-3 rounded-md">github</span>
+          <span class="skills">python</span>
+          <span class="skills">javascript</span>
+          <span class="skills">typescript</span>
+          <span class="skills">django</span>
+          <span class="skills">React</span>
+          <span class="skills">react router</span>
+          <span class="skills">html 5</span>
+          <span class="skills">CSS</span>
+          <span class="skills">django rest framework</span>
+          <span class="skills">git</span>
+          <span class="skills">mui</span>
+          <span class="skills">tailwind css</span>
+          <span class="skills">node js</span>
+          <span class="skills">bash</span>
+          <span class="skills">github</span>
         </div>
       </section>
     </div>
   </section>
-  <section class="w-full h-full bg-gray-50 py-20">
+  <section class="w-full h-max bg-gray-50 p-10 pt-20 py-32 flex flex-col gap-20 items-center">
     <div class="flex flex-col items-center justify-center gap-4">
       <h2 class="text-4xl font-semibold after:z-20 after:h-16">My Work</h2>
       <span class="h-1 w-8 rounded-lg bg-blue-500"></span>
@@ -142,24 +143,159 @@
         available.
       </p>
     </div>
-    <div class="flex flex-col gap-20 py-32 items-center justify-center">
-      <div class="w-full h-min grid grid-cols-2 max-w-6xl gap-10">
-        <!-- <div class="embla">
-          <div class="embla__container">
-            <div class="embla__slide">Slide 1</div>
-            <div class="embla__slide">Slide 2</div>
-            <div class="embla__slide">Slide 3</div>
+    <div class="flex flex-col w-full max-w-6xl gap-8">
+      <h3 class="text-2xl font-semibold">1. Websandbox</h3>
+      <p class="font-medium px-4 text-lg">An online browser based web development sandbox </p>
+      <div class="glide rounded-lg overflow-hidden">
+        <div class="glide__track" data-glide-el="track">
+          <ul class="glide__slides mb-8 h-full">
+            <img class="h-full w-full bg-black glide__slide rounded-lg object-fill"
+              src="src/assets/websandbox/websandbox-home-light.png"></img>
+            <img class="w-full bg-black rounded-lg glide__slide object-fill"
+              src="src/assets/websandbox/websandbox-home-dark.png"></img>
+            <img class="w-full bg-black rounded-lg glide__slide object-fill"
+              src="src/assets/websandbox/websandbox-demos-light.png"></img>
+            <img class="slide-images" src="src/assets/websandbox/websandbox-demos-dark.png"></img>
+            <img class="slide-images" src="src/assets/websandbox/websandbox-dashboard-light.png"></img>
+            <img class="slide-images" src="src/assets/websandbox/websandbox-dashboard-dark.png"></img>
+            <img class="slide-images" src="src/assets/websandbox/websandbox-editor-light.png"></img>
+            <img class="slide-images" src="src/assets/websandbox/websandbox-editor-dark.png"></img>
+            <img class="slide-images" src="src/assets/websandbox/websandbox-editor-project-light.png"></img>
+            <img class="slide-images" src="src/assets/websandbox/websandbox-editor-project-dark.png"></img>
+
+          </ul>
+        </div>
+        <div class="glide__arrows flex w-full gap-3 p-2 pt-4 m-auto justify-between" data-glide-el="controls">
+          <span class="text-md text-gray-700">Slide: 1 / 4 </span>
+          <div class="text-2xl">
+            <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><span
+                class="icon-[mdi--chevron-left]"></span>
+              <span class="fixed -left-[2000000000000000000px]">Prev</span>
+            </button>
+            <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+              <span class="icon-[mdi--chevron-right]"></span>
+              <span class="fixed -left-[2000000000000000000px]">next</span>
+            </button>
           </div>
-        </div> -->
-        <img class="h-80 w-full shadow-xl bg-black rounded-xl embla__slide object-fill"
-          src="src/assets/websandbox.png"></img>
-        <div class="w-full h-80"></div>
+        </div>
+        <div class="flex gap-3 flex-col py-2">
+          <h3 class="text-lg font-bold text-gray-700">Tools</h3>
+          <div class="flex flex-wrap gap-3 text-[.79rem]">
+            <span class="project-tools">python</span>
+            <span class="project-tools">typescript</span>
+            <span class="project-tools">django</span>
+            <span class="project-tools">React</span>
+            <span class="project-tools">react router</span>
+            <span class="project-tools">django rest framework</span>
+            <span class="project-tools">webcontainers</span>
+            <span class="project-tools">mui</span>
+            <span class="project-tools">tailwind css</span>
+          </div>
+        </div>
       </div>
-      <div class="w-full h-min grid grid-cols-2 max-w-6xl gap-10">
-        <img class="h-80 w-full shadow-xl bg-black rounded-xl embla__slide object-fill"
-          src="src/assets/websandbox.png"></img>
-        <div class="w-full h-80"></div>
+      <div class="flex flex-col gap-3">
+        <h3 class="text-lg font-bold text-gray-700">Demo</h3>
+        <nav class="flex flex-wrap gap-3 text-[.7rem]">
+          <a href="https://github.com/ogayanfe/websandbox" target="_blank" class="project-links">Open on github</a>
+          <a href="https://websandboxx.netlify.app" target="_blank" class="project-links">Live Demo</a>
+          <a target="_blank" href="https://youtu.be/mwFe1FtTL7o" class="project-links">Watch Video Demo on youtube</a>
+        </nav>
       </div>
+    </div>
+    <div class="flex flex-col w-full max-w-6xl gap-8">
+      <h3 class="text-2xl font-semibold">2. Birdie</h3>
+      <p class="font-medium px-4 text-lg">A social netorking application </p>
+      <div class="glide-two rounded-lg overflow-hidden">
+        <div class="glide__track rounded-lg" data-glide-el="track">
+          <ul class="glide__slides mb-8 h-full">
+            <img class="slide-image" src="src/assets/birdie/1.png"></img>
+            <img class="slide-image" src="src/assets/birdie/2.png"></img>
+            <img class="slide-image" src="src/assets/birdie/3.png"></img>
+            <img class="slide-image" src="src/assets/birdie/4.png"></img>
+            <img class="slide-image" src="src/assets/birdie/5.png"></img>
+            <img class="slide-image" src="src/assets/birdie/6.png"></img>
+          </ul>
+        </div>
+        <div class="glide__arrows flex w-full gap-3 p-2 pt-4 m-auto justify-between" data-glide-el="controls">
+          <span class="text-md text-gray-700">Slide: 1 / 4 </span>
+          <div class="text-2xl">
+            <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><span
+                class="icon-[mdi--chevron-left]"></span>
+              <span class="fixed -left-[2000000000000000000px]">Prev</span>
+            </button>
+            <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+              <span class="icon-[mdi--chevron-right]"></span>
+              <span class="fixed -left-[2000000000000000000px]">next</span>
+            </button>
+          </div>
+        </div>
+        <div class="flex gap-3 flex-col py-2">
+          <h3 class="text-lg font-bold text-gray-700">Tools</h3>
+          <div class="flex flex-wrap gap-3 text-[.79rem]">
+            <span class="project-tools">python</span>
+            <span class="project-tools">javascript</span>
+            <span class="project-tools">django</span>
+            <span class="project-tools">React</span>
+            <span class="project-tools">react router</span>
+            <span class="project-tools">django rest framework</span>
+            <span class="project-tools">mui</span>
+            <span class="project-tools">tailwind css</span>
+          </div>
+        </div>
+      </div>
+      <nav class="flex flex-col gap-3">
+        <h3 class="text-lg font-bold text-gray-700">Demo</h3>
+        <div class="flex flex-wrap gap-3 text-[.7rem]">
+          <a href="https://github.com/ogayanfe/birdie" target="_blank" class="project-links">Open on github</a>
+          <a href="https://birdie.netlify.app" target="_blank" class="project-links">Live Demo</a>
+          <a target="_blank" href="https://github.com/ogayanfe/birdie#demo" class="project-links">Watch Video Demo</a>
+        </div>
+      </nav>
+    </div>
+    <div class="flex flex-col w-full max-w-6xl gap-8">
+      <h3 class="text-2xl font-semibold">3. Linkup</h3>
+      <p class="font-medium px-4 text-lg">Djanga chatroom application powered with django, channels and websockets</p>
+      <div class="glide-three rounded-lg overflow-hidden">
+        <div class="glide__track" data-glide-el="track">
+          <ul class="glide__slides mb-8 h-full">
+            <img class="slide-image" src="src/assets/linkup/main.png"></img>
+          </ul>
+        </div>
+        <div class="glide__arrows flex w-full gap-3 p-2 pt-4 m-auto justify-between" data-glide-el="controls">
+          <span class="text-md text-gray-700">Slide: 1 / 1 </span>
+          <div class="text-2xl">
+            <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><span
+                class="icon-[mdi--chevron-left]"></span>
+              <span class="fixed -left-[2000000000000000000px]">Prev</span>
+            </button>
+            <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+              <span class="icon-[mdi--chevron-right]"></span>
+              <span class="fixed -left-[2000000000000000000px]">next</span>
+            </button>
+          </div>
+        </div>
+        <div class="flex gap-3 flex-col py-2">
+          <h3 class="text-lg font-bold text-gray-700">Tools</h3>
+          <div class="flex flex-wrap gap-3 text-[.79rem]">
+            <span class="project-tools">python</span>
+            <span class="project-tools">javascript</span>
+            <span class="project-tools">django</span>
+            <span class="project-tools">django channels</span>
+            <span class="project-tools">ASGI</span>
+            <span class="project-tools">Redis</span>
+            <span class="project-tools">websockets</span>
+          </div>
+        </div>
+      </div>
+      <nav class="flex flex-col gap-3">
+        <h3 class="text-lg font-bold text-gray-700">Demo</h3>
+        <div class="flex flex-wrap gap-3 text-[.7rem]">
+          <a href="https://github.com/ogayanfe/django-chat-application" target="_blank" class="project-links">
+            Open on github
+          </a>
+        </div>
+      </nav>
+    </div>
     </div>
   </section>
 </body>

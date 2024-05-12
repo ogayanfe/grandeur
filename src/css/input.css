@@ -55,3 +55,18 @@ body {
     top: 60px;
   }
 }
+
+@layer components {
+  .project-links {
+    @apply rounded-md bg-gray-200 p-3 uppercase text-gray-500 transition-colors hover:bg-gray-500 hover:text-blue-50;
+  }
+  .skills {
+    @apply rounded-md bg-gray-200 p-3 text-sm uppercase text-gray-500;
+  }
+  .project-tools {
+    @apply rounded-md bg-gray-200 p-3 uppercase text-gray-500 before:mr-1 before:content-['#'];
+  }
+  .slide-image {
+    @apply glide__slide h-full w-full rounded-lg bg-black object-fill;
+  }
+}
