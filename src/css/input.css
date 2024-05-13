@@ -72,4 +72,7 @@ body {
   .slide-image {
     @apply glide__slide h-full w-full rounded-lg bg-black object-fill;
   }
+  .header-link-sm {
+    @apply fixed left-0 top-0 h-full w-full flex-col;
+  }
 }

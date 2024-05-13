@@ -6,7 +6,8 @@
   <link rel="stylesheet" href="./index.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <script type="module" src="./src/js/corousel.js"></script>
+  <script type="module" src="./src/js/corousel.js" defer></script>
+  <script type="module" src="./src/js/index.js"></script>
   <link
     href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
     rel="stylesheet" />
@@ -22,16 +23,19 @@
       <h1>Odule Ayanfeoluwa</h1>
     </div>
     <span class="bg-blue-100"></span>
-    <button class="text-2xl md:hidden">
+    <button class="text-2xl lg:hidden" id="hamburger">
       <span class="fixed -left-[20000000000000000000px]">Show Menu</span>
       <span class="icon-[pajamas--hamburger]"></span>
     </button>
-    <ul class="hidden items-center justify-center gap-12 md:flex">
-      <a class="hover:text-blue-400" href="#top">Home</a>
-      <a class="hover:text-blue-400" href="#about">About</a>
-      <a class="hover:text-blue-400" href="#projects">Projects</a>
-      <a class="hover:text-blue-400" href="#contact">Contact</a>
-    </ul>
+    <nav id="menu"
+      class="transition-all hidden max-lg:fixed right-0 top-0 max-lg:h-full max-lg:w-full max-lg:flex-col lg:flex bg-white items-center justify-center gap-12">
+      <button class="lg:hidden icon-[mdi--close] text-4xl hover:scale-110 hover:text-blue-400 transition-all"
+        id="close-button">Close</button>
+      <a class="hover:text-blue-400 transition-all hover:scale-110 text-right" href="#top">Home</a>
+      <a class="hover:text-blue-400 transition-all hover:scale-110 text-right" href="#about">About</a>
+      <a class="hover:text-blue-400 transition-all hover:scale-110 text-right" href="#projects">Projects</a>
+      <a class="hover:text-blue-400 transition-all hover:scale-110 text-right" href="#contact">Contact</a>
+    </nav>
   </header>
   <section class="relative flex h-[110%] min-h-[700px] w-full items-center justify-center bg-hero bg-cover">
     <div class="flex h-full max-w-3xl flex-col items-center justify-center px-2 gap-8 text-gray-900 xl:gap-[3.2rem]">
@@ -140,7 +144,7 @@
       <h2 class="text-4xl font-semibold after:z-20 after:h-16">My Work</h2>
       <span class="h-1 w-8 rounded-lg bg-blue-500"></span>
       <p class="text-md max-w-3xl text-center md:text-lg">
-        Here are some of the projects I have created over the years, github links to demo are live demos are provided
+        Here are some of the projects I have created over the years, github links and links to live demos are provided
         when available.
       </p>
     </div>
@@ -308,7 +312,7 @@
       </p>
     </div>
     <div class="flex flex-col justify-center items-center w-full h-min">
-      <div class="w-full max-w-3xl p-4 sm:p-12 bg-white rounded-lg shadow-xl">
+      <div class="w-full max-w-4xl p-4 sm:p-12 bg-white rounded-lg shadow-lg">
         <form action="" method="post">
           <div class="mb-6">
             <label for="name" class="block text-sm font-medium text-gray-700 mb-2">Name</label>
@@ -339,8 +343,8 @@
     </div>
   </section>
   <footer
-    class="flex flex-col justify-center border-t-[2px] border-gray-200 border-dashed items-center text-sm lg:text-lg py-12 bg-white text-gray-600">
-    <span class="text-center px-4">
+    class="flex flex-col justify-center border-t-[2px] border-gray-200 border-dashed items-center tracking-widest text-md md:text-lg py-12 bg-white text-gray-600">
+    <span class="text-center px-1 sm lg:px-4 font-medium">
       Copyright © 2024 Odule Ayanfeoluwa — All Rights Reserved — Made with ❤️
     </span>
   </footer>
