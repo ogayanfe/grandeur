@@ -2,4 +2,4 @@
 
 My personal portfolio website
 <br/><br/>
-![portfolio-site](https://github.com/ogayanfe/grandeur/assets/95624629/24be1880-c8c2-4fbd-b123-cfce7c1d6306)
+![ogayanfe netlify app_(GITHUB TEMPLATES)](https://github.com/ogayanfe/grandeur/assets/95624629/d995908f-b6cf-4ef2-a0cb-959df8726474)
