@@ -6,8 +6,7 @@
   <link rel="stylesheet" href="./index.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <script type="module" src="./src/js/corousel.js" defer></script>
-  <script type="module" src="./src/js/index.js"></script>
+  <script type="module" src="./src/js/index.js" defer></script>
   <link
     href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
     rel="stylesheet" />
@@ -68,9 +67,9 @@
           <span class="icon-[fa--codepen]">Codepen profile</span>
         </a>
       </nav>
-      <button class="rounded-md bg-blue-500 px-20 py-4 text-lg font-bold text-white shadow-xl">
+      <a href="#projects" class="rounded-md bg-blue-500 px-20 py-4 text-lg font-bold text-white shadow-xl">
         PROJECTS
-      </button>
+      </a>
       <div class="container absolute bottom-1 scale-50">
         <div class="field">
           <div class="mouse"></div>
@@ -113,9 +112,9 @@
           you have a project that aligns with my expertise, feel free to
           contact me!
         </p>
-        <button class="rounded-md bg-blue-500 px-16 py-3 text-lg font-bold text-white shadow-xl w-max mt-8">
+        <a href="#contact" class="rounded-md bg-blue-500 px-16 py-3 text-lg font-bold text-white shadow-xl w-max mt-8">
           Contact
-        </button>
+        </a>
       </section>
       <section class="flex flex-col gap-6">
         <h3 class="pb-5 text-3xl font-bold text-gray-700">My Skillset</h3>
@@ -150,7 +149,7 @@
     </div>
     <div class="flex flex-col w-full max-w-6xl gap-8">
       <h3 class="text-2xl font-semibold">1. Websandbox</h3>
-      <p class="font-medium px-4 text-lg">An online browser based web development sandbox </p>
+      <p class="font-medium text-lg">An online browser based web development sandbox </p>
       <div class="glide rounded-lg overflow-hidden">
         <div class="glide__track" data-glide-el="track">
           <ul class="glide__slides mb-8 h-full">
@@ -171,8 +170,8 @@
           </ul>
         </div>
         <div class="glide__arrows flex w-full gap-3 p-2 pt-4 m-auto justify-between" data-glide-el="controls">
-          <span class="text-md text-gray-700">Slide: 1 / 4 </span>
-          <div class="text-2xl">
+          <span class="text-md text-gray-700"></span>
+          <div class="text-2xl" data-glide-el="controls">
             <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><span
                 class="icon-[mdi--chevron-left]"></span>
               <span class="fixed -left-[2000000000000000000px]">Prev</span>
@@ -209,7 +208,7 @@
     </div>
     <div class="flex flex-col w-full max-w-6xl gap-8">
       <h3 class="text-2xl font-semibold">2. Birdie</h3>
-      <p class="font-medium px-4 text-lg">A social netorking application </p>
+      <p class="font-medium text-lg">A social netorking application </p>
       <div class="glide-two rounded-lg overflow-hidden">
         <div class="glide__track rounded-lg" data-glide-el="track">
           <ul class="glide__slides mb-8 h-full">
@@ -221,9 +220,9 @@
             <img class="slide-image" src="src/assets/birdie/6.png"></img>
           </ul>
         </div>
-        <div class="glide__arrows flex w-full gap-3 p-2 pt-4 m-auto justify-between" data-glide-el="controls">
-          <span class="text-md text-gray-700">Slide: 1 / 4 </span>
-          <div class="text-2xl">
+        <div class="glide__arrows flex w-full gap-3 p-2 pt-4 m-auto justify-between">
+          <span class="text-md text-gray-700"> </span>
+          <div class="text-2xl" data-glide-el="controls">
             <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><span
                 class="icon-[mdi--chevron-left]"></span>
               <span class="fixed -left-[2000000000000000000px]">Prev</span>
@@ -259,27 +258,14 @@
     </div>
     <div class="flex flex-col w-full max-w-6xl gap-8">
       <h3 class="text-2xl font-semibold">3. Linkup</h3>
-      <p class="font-medium px-4 text-lg">Djanga chatroom application powered with django, channels and websockets</p>
+      <p class="font-medium text-lg">Djanga chatroom application powered with django, channels and websockets</p>
       <div class="glide-three rounded-lg overflow-hidden">
         <div class="glide__track" data-glide-el="track">
           <ul class="glide__slides mb-8 h-full">
             <img class="slide-image" src="src/assets/linkup/main.png"></img>
           </ul>
         </div>
-        <div class="glide__arrows flex w-full gap-3 p-2 pt-4 m-auto justify-between" data-glide-el="controls">
-          <span class="text-md text-gray-700">Slide: 1 / 1 </span>
-          <div class="text-2xl">
-            <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><span
-                class="icon-[mdi--chevron-left]"></span>
-              <span class="fixed -left-[2000000000000000000px]">Prev</span>
-            </button>
-            <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
-              <span class="icon-[mdi--chevron-right]"></span>
-              <span class="fixed -left-[2000000000000000000px]">next</span>
-            </button>
-          </div>
-        </div>
-        <div class="flex gap-3 flex-col py-2">
+        <div class="flex gap-3 flex-col mt-8">
           <h3 class="text-lg font-bold text-gray-700">Tools</h3>
           <div class="flex flex-wrap gap-3 text-[.79rem]">
             <span class="project-tools">python</span>
@@ -292,7 +278,7 @@
           </div>
         </div>
       </div>
-      <nav class="flex flex-col gap-3">
+      <nav class="flex flex-col gap-3 pt-3">
         <h3 class="text-lg font-bold text-gray-700">Demo</h3>
         <div class="flex flex-wrap gap-3 text-[.7rem]">
           <a href="https://github.com/ogayanfe/django-chat-application" target="_blank" class="project-links">
@@ -312,8 +298,8 @@
       </p>
     </div>
     <div class="flex flex-col justify-center items-center w-full h-min">
-      <div class="w-full max-w-4xl p-4 sm:p-12 bg-white rounded-lg shadow-lg">
-        <form action="" method="post">
+      <div class="w-full max-w-4xl p-4 sm:p-12 bg-white rounded-lg shadow-md border-2">
+        <form action="" method="post" id="contact-form">
           <div class="mb-6">
             <label for="name" class="block text-sm font-medium text-gray-700 mb-2">Name</label>
             <input type="text" id="name" name="name"
@@ -338,6 +324,7 @@
               Submit
             </button>
           </div>
+          <input type="hidden" name="date" value="" id="date-field" />
         </form>
       </div>
     </div>

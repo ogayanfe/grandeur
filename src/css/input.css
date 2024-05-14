@@ -61,7 +61,7 @@ body {
   .glide__slide {
   }
   .project-links {
-    @apply rounded-md bg-gray-200 p-3 uppercase text-gray-500 transition-colors hover:bg-gray-500 hover:text-blue-50;
+    @apply rounded-md bg-gray-200 p-3 uppercase text-gray-500 transition-colors before:mr-1 before:content-['🔗'] hover:bg-gray-500 hover:text-blue-50;
   }
   .skills {
     @apply rounded-md bg-gray-200 p-3 text-sm uppercase text-gray-500;

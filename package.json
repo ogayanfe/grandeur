@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "@emailjs/browser": "^4.3.3",
     "@glidejs/glide": "^3.6.0",
     "@iconify-json/fa": "^1.1.8",
     "@iconify-json/mdi": "^1.1.66",
